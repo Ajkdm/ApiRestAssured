@@ -59,8 +59,6 @@ public class BasicRequests1
 			
 		.when()
 			.put("https://reqres.in/api/users/"+id)
-			
-		
 		.then()
 			.statusCode(200)
 			.log().all();

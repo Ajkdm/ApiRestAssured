@@ -24,7 +24,7 @@ public class TestPostUsingPOJO
 			.post("https://reqres.in/api/users")
 		.then()
 			.statusCode(201)
-			.body("email",equalTo("test123@demo.com"))
+			.body("data[0].email",equalTo("user1@demo.com"))
 			.body("first_name",equalTo("test1"))
 			.body("last_name", equalTo("user1"))
 			//.header("Content-Type","application/json;charset=utf-8");
